@@ -1,0 +1,139 @@
+body{
+	padding-top:50px;
+  
+}
+
+/* Sidebar */
+#sidebar-wrapper{
+	margin-top: 5px;
+	z-index: 1;
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	overflow-y: hidden;
+	background-color: black;
+	opacity: 0.9;
+	border: 2px solid red;
+	/*padding-top: 10px;*/
+
+}
+
+/* main content */
+#page-content-wrapper{
+	width: 100%;
+	position: absolute;
+	/*padding: 12px;*/
+
+}
+
+/* change the width of sidebar to display */
+#wrapper.menuDisplayed #sidebar-wrapper{
+	width: 250px;
+}
+#wrapper.menuDisplayed #page-content-wrapper{
+	padding-left: 250px;
+	/*margin-left: 250px;*/
+}
+
+/* sidebar styling */
+.sidebar-nav{
+	padding:0;
+	height:100%;
+	list-style: none;
+}
+
+.sidebar-nav li{
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a{
+	display: block;
+	text-decoration: none;
+	color:gold;
+	opacity:0.9;
+	font-weight: bold;
+}
+
+.sidebar-nav li a:hover{
+	background-color: gray;
+}
+
+/* to hide collapsed menu on iphone and ipad when page first display */
+
+@media (min-width: 768px) and (max-width: 979px) {	
+	.nav-collapse, .nav-collapse.collapse {
+		/*overflow: hidden;*/
+	}   
+	.navbar .btn-navbar {
+		display: none;
+	} 
+}
+
+
+/* close button */
+.close-button{	
+	color:white;	
+	text-align: center;
+	width: 20px;		
+	/*	line-height: 40px;*/
+	margin-left: auto;
+	margin-right: 0px;
+}
+.close-button:hover{
+	color: yellow;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+
+/*admin*/ 
+
+/* admin Sidebar */
+#admin-sidebar-wrapper{
+	/*	margin-top: 5px;*/
+	z-index: 1;
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	overflow-y: hidden;
+	background-color: black;
+	opacity: 0.9;
+	border: 2px solid red;
+	/*	padding-top: 10px;*/
+
+}
+
+/* admin main content */
+#admin-page-content-wrapper{	
+	/*	margin-top: 20px;*/
+	position: absolute;
+	width:100%;
+	padding-left: 250px;
+
+}
+
+/* change the width of sidebar to display */
+#wrapper.menuDisplayed #admin-sidebar-wrapper{
+	width: 0px;
+}
+#wrapper.menuDisplayed #admin-page-content-wrapper{
+	padding-left: 0px;
+	width: 100%;
+	/*margin-left: 250px;*/
+}
+
+
+// tinymce editor configuration
+#text{
+	display:none;
+}
+
+.imgClass{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
